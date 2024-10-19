@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap');
+
+:root {
+    --primary: #f4d10a;
+    --secondary: #D6B80B;
+    --fond: #f2efe6;
+    --fond-hover: #EEEDE9;
+    --dark: #04030F;
+    --dark-dark: #0c0c0e;
+    --gray: #d9d9d9;
+    --gray-dark: #d0cdcd;
+    --footer-dark: #222222;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    font-family: 'Helvetica Neue', Cantarell, 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--fond);
+}
+
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-footer {
+    background-color: var(--footer-dark);
+}
+
+.relative {
+    position: relative;
+    margin: auto;
+}
+
+.center-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.testimony {
+    margin-top: 2em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.guillemet {
+    font-family: "Ruge Boogie", cursive;
+    font-weight: 600;
+    font-size: 4em;
+    text-shadow: 2px 2px 1px var(--primary);
+}
+
+.guillemet-top {
+    line-height: 0;
+    display: inline-block;
+    transform: translateY(-0.2em) rotate(180deg);
+}
+
+.guillemet-bottom {
+    line-height: 0;
+    display: inline-block;
+    transform: translateY(0.5em);
+}
+
+.testimony-auteur {
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline solid var(--primary) 4px;
+    text-underline-offset: 0em;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.flex-1-3 {
+    flex-basis: 33%;
+}
+
+.flex-2-3 {
+    flex-basis: 78%;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* Now je mets des commentaires: YEAH !!! */
+.logo {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.logo-xl {
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.text-role {
+    text-decoration: solid 2px;
+    text-decoration-color: var(--primary);
+}
+
+.photo {
+    width: 350px;
+    border-radius: 100%;
+}
+
+.link-list {
+    list-style: none;
+    margin: 20px 0px 20px 0px;
+}
+
+
+
+
+
+/* Les gaps */
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+
+
+
+
+
+.link-item {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.link-item:hover {
+    color: var(--secondary);
+}
+
+.footer-link {
+    color: white;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: start;
+}
+
+
+
+
+
+
+/* Les btn */
+.btn {
+    padding: 6px 35px 6px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.btn-dark {
+    color: white;
+    background-color: var(--dark-dark);
+}
+
+.btn-yellow {
+    background-color: var(--primary);
+}
+
+.btn-yellow:hover {
+    background-color: var(--secondary);
+}
+
+
+.btn-trans {
+    border: solid 2px;
+    padding: 4px 35px 4px 35px !important;
+}
+
+.btn-trans:hover {
+    background-color: var(--fond-hover);
+}
+
+
+
+
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-presentation {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.vertical-align {
+    align-items: center;
+}
+
+.profil-item {
+    font-size: 1.5rem;
+    list-style-type: symbols('▽');
+    /* list-style-image: url('./images/'); */
+}
+
+.button-group-profil {
+    margin-top: 1.2rem;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+}
+
+.hero {
+    padding: 8rem 10rem 8rem 10rem;
+}
+
+.list-competence {
+    margin: 0;
+    padding: 2rem 0rem 2rem 0rem;
+    background-color: var(--dark);
+    color: var(--white);
+    /* list-style: symbols('⭐'); */
+}
+
+.competence {
+    list-style: inside;
+}
+
+.titre-section {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.soulignement {
+    text-decoration: underline solid var(--primary) 5px;
+    text-underline-offset: .1em;
+}
+
+.t-1 {
+    width: 2rem;
+}
+
+.service-text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.service-blog {
+    padding: 2rem 4rem 2rem 4rem;
+    background-color: var(--gray-dark);
+    width: 20rem;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.rounded-2 {
+    border-radius: 20px;
+}
+
+.rounded-1 {
+    border-radius: 10px;
+}
+
+.rounded {
+    border-radius: 100%;
+    border: 4px solid var(--white);
+}
+
+.blog-group {
+    width: fit-content;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+.mb-5 {
+    margin-bottom: 5em;
+}
+
+.mt-1 {
+    margin-top: 2em;
+}
+
+
+
+
+
+/* Les images */
+.service-blog>img {
+    width: 60px;
+}
+
+
+.icon {
+    background-color: var(--white);
+    border-radius: 100%;
+    padding: 4px;
+}
+
+.instagram {
+    padding: 4px;
+    width: 40px;
+}
+
+.portfolio {
+    width: 100%;
+    padding: 2em 0em 2em 0em;
+}
+
+.testimonials {
+    margin-top: 20em;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    height: 40em;
+}
+
+.skills-group {
+    margin: auto;
+    gap: 5em;
+}
+
+.skill-items>img {
+    width: 46px;
+}
+
+
+.skill-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 20em;
+    padding: 2em;
+    border-radius: .5em;
+    border: var(--dark) solid 2px;
+    background-color: var(--gray);
+    color: var(--dark-dark);
+    font-weight: 600;
+    justify-content: space-around;
+}
+
+
+
+.block {
+    display: block;
+}
+
+
+.fit-content {
+    width: fit-content;
+}
+
+.fs-1 {
+    font-size: 1.3em;
+}
+
+
+/* Les px et mx */
+.px-2 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Les w */
+.w-icon {
+    width: 32px;
+}
+
+.w-2 {
+    width: 60rem;
+}
+
+
+
+
+
+
+
+
+/* Les textes */
+.text-white {
+    color: var(--white);
+}
+
+
+
+
+footer {
+    margin: 20rem 0rem 0rem 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Debug */
+
+.debug {
+    border: solid 2px red;
+    border-radius: 1rem;
+}
